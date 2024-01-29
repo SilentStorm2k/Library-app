@@ -1,5 +1,5 @@
 const myLibrary = [];
-const display = document.querySelector('main');
+const display = document.querySelector('.book-container');
 
 function Book(title, author, pages, isAlreadyRead) {
     this.title = title;
@@ -79,8 +79,9 @@ function addNewBookButton () {
     display.appendChild(entry);
 }
 
+const getUserInput = document.getElementById("userInput");
 function getNewBook () {
-
+    getUserInput.showModal();
 }
 
 const book1 = new Book("The hobbit", "J.R.R. Tolkien", 295, false);
