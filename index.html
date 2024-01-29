@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
         <img src="assets/images/logo.svg" alt="Library">
@@ -13,6 +15,33 @@
         <a href="https://github.com/SilentStorm2k/Library-app"><img src="assets/images/code.svg" alt="Code"></a>
     </header>
     <main>
+        <dialog id="userInput">
+            <form>
+                <legend>Add new book:</legend>
+                <p>
+                    <label>Title:</label>
+                    <input type="text">
+                </p>
+                <p>
+                    <label>Author:</label>
+                    <input type="text">
+                </p>
+                <p>
+                    <label>Pages</label>
+                    <input type="number">
+                </p>
+                <p>
+                    <label>Already read?</label>
+                    <input id="read" type="radio" name="already-read">
+                    <input id="not-read" type="radio" name="already-read">
+                </p>
+                <div>
+                    <button type="submit" id="confirmBtn" value="Normal close">Confirm</button>
+                    <button value="cancel" formmethod="dialog">Cancel</button>
+                </div>
+            </form>
+        </dialog>
+        <div class="book-container"></div>
     </main>
     <footer>
         <p>Created by SilentStorm2k</p>
@@ -21,4 +50,5 @@
     </footer>
     <script src="js/index.js"></script>
 </body>
+
 </html>
