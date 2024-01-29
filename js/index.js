@@ -50,7 +50,9 @@ function addBookToDisplay (book) {
     titleText.textContent = "Title:";
     authorText.textContent = "Author:";
     pagesText.textContent = "Pages:";
-    deleteButton.textContent = "Delete";
+    const deleteImage = document.createElement('img');
+    deleteImage.src = "assets/images/delete.svg";
+    deleteButton.appendChild(deleteImage);
     deleteButton.addEventListener("click", () => {
         const bookIndex = myLibrary.indexOf(book);
         if (bookIndex > -1)
@@ -67,15 +69,18 @@ function addNewBookButton () {
     const entry = document.createElement('div');
     entry.classList.add('card');
     const addButton = document.createElement('button');
+    const addButtonImage = document.createElement('img');
+    addButtonImage.src = "assets/images/add.svg";
+    addButton.appendChild(addButtonImage);
+    addButton.classList.add("add-button");
     addButton.style.gridArea = "1 / 1 / 6 / 3";
-    addButton.textContent = "Add new book";
     addButton.addEventListener("click", getNewBook);
     entry.appendChild(addButton);
     display.appendChild(entry);
 }
 
 function getNewBook () {
-    
+
 }
 
 const book1 = new Book("The hobbit", "J.R.R. Tolkien", 295, false);
