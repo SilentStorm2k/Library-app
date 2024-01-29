@@ -31,6 +31,9 @@ header {
 main {
     flex: 1;
     background-color: var(--color--light-pink);
+}
+
+.book-container {
     display: grid;
     justify-content: start;
     align-content: flex-start;
@@ -95,7 +98,8 @@ main button:hover {
     animation-play-state:running;
 }
 
-.add-button {
+.add-button,
+form button {
     animation: none;
 }
 
