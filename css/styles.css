@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+:root {
+    --color--pink: rgb(251, 161, 183);
+    --color--light-pink: rgb(255, 209, 218);
+    --color--pale: rgb(255, 240, 245);
+    --color--yellow: rgb(255, 219, 170);
+}
+
+html,
+body {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: var(--color--pink);
+}
+
+main {
+    flex: 1;
+    background-color: var(--color--light-pink);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--color--yellow);
+}
+/* 
+* {
+    border: 1px solid red;
+} */
