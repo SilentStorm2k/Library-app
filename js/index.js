@@ -10,7 +10,9 @@ function Book(title, author, pages, isAlreadyRead) {
 };
 
 function addBookToLibrary (book) {
-    myLibrary.push(book);
+    let isInLibrary = myLibrary.findIndex((b) => b.info() === book.info());
+    if (isInLibrary === -1)
+        myLibrary.push(book);
     showBooks();
 }
 
@@ -80,8 +82,23 @@ function addNewBookButton () {
 }
 
 const getUserInput = document.getElementById("userInput");
+const confirmBtn = getUserInput.querySelector("#confirmBtn");
+const form = getUserInput.querySelector('form');
+
+confirmBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    const formData = new FormData(form)
+    const enteredDetails = Object.fromEntries(formData);
+    const newBook = new Book(enteredDetails.title, enteredDetails.author, enteredDetails.pages, enteredDetails.isAlreadyRead == 'true' ? true : false);
+    getUserInput.close(newBook.info());
+    addBookToLibrary(newBook);
+});
+
 function getNewBook () {
     getUserInput.showModal();
+    getUserInput.addEventListener('close', (e) => {
+        console.log(getUserInput.returnValue);
+    });
 }
 
 const book1 = new Book("The hobbit", "J.R.R. Tolkien", 295, false);
