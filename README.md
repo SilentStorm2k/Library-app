@@ -178,7 +178,7 @@ Project Link: [https://github.com/SilentStorm2k/Library-app](https://github.com/
 [issues-shield]: https://img.shields.io/github/issues/SilentStorm2k/Library-app.svg?style=for-the-badge
 [issues-url]: https://github.com/SilentStorm2k/Library-app/issues
 [license-shield]: https://img.shields.io/github/license/SilentStorm2k/Library-app.svg?style=for-the-badge
-[license-url]: https://github.com/SilentStorm2k/Library-app/blob/master/LICENSE.txt
+[license-url]: https://github.com/SilentStorm2k/Library-app/blob/master/LICENSE
 [html]: https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
 [html-url]: https://html5.org/
 [css]: https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white
