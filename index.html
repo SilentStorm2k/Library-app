@@ -17,23 +17,23 @@
     <main>
         <dialog id="userInput">
             <form method="post">
-                <legend>Add new book:</legend>
+                <legend>Enter book details:</legend>
                 <p>
                     <label>Title:</label>
-                    <input type="text" name="title">
+                    <input type="text" name="title" placeholder="Title">
                 </p>
                 <p>
                     <label>Author:</label>
-                    <input type="text" name="author">
+                    <input type="text" name="author" placeholder="Author name">
                 </p>
                 <p>
-                    <label>Pages</label>
-                    <input type="number" name="pages">
+                    <label>Pages:</label>
+                    <input type="number" name="pages" placeholder="0">
                 </p>
                 <p>
                     <label>Already read?</label>
-                    <input value="true" type="radio" name="isAlreadyRead">
-                    <input value="false" type="radio" name="isAlreadyRead">
+                    <input value="true" type="radio" name="isAlreadyRead" class="read">
+                    <input value="false" type="radio" name="isAlreadyRead" class="notRead">
                 </p>
                 <div>
                     <button type="submit" id="confirmBtn" value="Normal close">Confirm</button>
