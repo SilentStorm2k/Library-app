@@ -44,8 +44,10 @@ function addBookToDisplay (book) {
     pages.textContent = book.pages;
     read.type = "radio";
     read.checked = book.isAlreadyRead;
+    read.classList.add("read");
     notRead.type = "radio"
     notRead.checked = !book.isAlreadyRead;
+    notRead.classList.add("notRead");
     read.name = book.info();
     notRead.name = book.info();
     isAlreadyRead.append(read, notRead);
