@@ -106,3 +106,66 @@ form button {
 .add-button:hover {
     transform: scale(1.2);
 }
+
+#userInput::backdrop {
+    /* background-color: aqua; */
+    backdrop-filter: blur(5px);
+}
+
+#userInput {
+    border-radius: 8px;
+    border: 2px solid var(--color--light-pink);
+    box-shadow: 5px 5px 5px var(--color--yellow), -5px -5px 5px var(--color--yellow);
+}
+
+legend {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+form div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+form p {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+}
+
+form p:last-of-type {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+form button {
+    border: 2px solid var(--color--pink);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+form button:hover {
+    background-color: var(--color--light-pink);
+}
+
+input[type="radio"] {
+    border-radius: 50%;
+    border: 2px solid var(--color--pink);
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    width: 1rem;
+    height: 1rem;
+}
+
+.read:checked {
+    color: lightgreen;
+    background-color: lightgreen;
+}
+
+.notRead:checked {
+    color: red;
+    background-color: red;
+}
