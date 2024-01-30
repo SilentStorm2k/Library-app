@@ -16,24 +16,24 @@
     </header>
     <main>
         <dialog id="userInput">
-            <form>
+            <form method="post">
                 <legend>Add new book:</legend>
                 <p>
                     <label>Title:</label>
-                    <input type="text">
+                    <input type="text" name="title">
                 </p>
                 <p>
                     <label>Author:</label>
-                    <input type="text">
+                    <input type="text" name="author">
                 </p>
                 <p>
                     <label>Pages</label>
-                    <input type="number">
+                    <input type="number" name="pages">
                 </p>
                 <p>
                     <label>Already read?</label>
-                    <input id="read" type="radio" name="already-read">
-                    <input id="not-read" type="radio" name="already-read">
+                    <input value="true" type="radio" name="isAlreadyRead">
+                    <input value="false" type="radio" name="isAlreadyRead">
                 </p>
                 <div>
                     <button type="submit" id="confirmBtn" value="Normal close">Confirm</button>
