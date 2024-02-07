@@ -101,8 +101,6 @@ Simple Library application built in my path to learn html/css/js through The Odi
 * [![html][html]][html-url]
 * [![css][css]][css-url]
 * [![js][js]][js-url]
-* [![nodejs][nodejs]][nodejs-url]
-* [![webpack][webpack]][webpack-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -187,7 +185,3 @@ Project Link: [https://github.com/SilentStorm2k/Library-app](https://github.com/
 [css-url]: https://www.w3.org/Style/CSS/Overview.en.html
 [js]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
 [js-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
-[nodejs]: https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
-[nodejs-url]: https://nodejs.org/en
-[webpack]: https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black
-[webpack-url]: https://webpack.js.org/
