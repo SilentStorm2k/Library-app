@@ -20,20 +20,20 @@
                 <legend>Enter book details:</legend>
                 <p>
                     <label>Title:</label>
-                    <input type="text" name="title" placeholder="Title">
+                    <input type="text" name="title" placeholder="Title" required>
                 </p>
                 <p>
                     <label>Author:</label>
-                    <input type="text" name="author" placeholder="Author name">
+                    <input type="text" name="author" placeholder="Author name" required>
                 </p>
                 <p>
                     <label>Pages:</label>
-                    <input type="number" name="pages" placeholder="0">
+                    <input type="number" name="pages" placeholder="0" min="1" required>
                 </p>
                 <p>
                     <label>Already read?</label>
                     <input value="true" type="radio" name="isAlreadyRead" class="read">
-                    <input value="false" type="radio" name="isAlreadyRead" class="notRead">
+                    <input value="false" type="radio" name="isAlreadyRead" class="notRead" checked>
                 </p>
                 <div>
                     <button type="submit" id="confirmBtn" value="Normal close">Confirm</button>
